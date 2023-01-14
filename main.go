@@ -25,5 +25,5 @@ func parseLine(line *string) int {
 	if *line == "" {
 		return 0
 	}
-	return len(strings.Split(*line, " "))
+	return len(strings.Fields(*line))
 }
